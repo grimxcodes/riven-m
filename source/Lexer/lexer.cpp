@@ -20,3 +20,18 @@ return Source[Position];
 
 
 }
+
+
+
+char lexer::Advance() 
+char cureent::Peek();
+{
+ if (Position < Source.size()) 
+ {
+  
+  Position++ ;
+
+}
+
+return current;
+}
