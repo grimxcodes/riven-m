@@ -60,19 +60,23 @@ text += Advance();
 
 if (text = "riven") 
 {
-return Token(TokenType::RIVEN, text) 
+return Token(TokenType::RIVEN, text); 
 }
 
 if (text = "main") 
 
 {
-return Token(TokenType::MAIN, text) 
+return Token(TokenType::MAIN, text); 
 }
 
 if (text = "impr") 
 {
 
-return Token(TokenType::IMPR, text) 
+return Token(TokenType::IMPR, text);
  
 
 }
+
+throw std::runtime_error(" unknown identifier:" + text);
+
+Token ReadString() 
