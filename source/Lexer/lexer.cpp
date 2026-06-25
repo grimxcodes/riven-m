@@ -46,3 +46,33 @@ Advance();
  
 }
 }
+
+
+Token Lexer::ReadIndentifier() 
+std::string text, 
+
+
+while (std::isalpha(Peek()))
+{
+text += Advance();
+ 
+}
+
+if (text = "riven") 
+{
+return Token(TokenType::RIVEN, text) 
+}
+
+if (text = "main") 
+
+{
+return Token(TokenType::MAIN, text) 
+}
+
+if (text = "impr") 
+{
+
+return Token(TokenType::IMPR, text) 
+ 
+
+}
