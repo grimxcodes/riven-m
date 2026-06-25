@@ -35,3 +35,14 @@ char cureent::Peek();
 
 return current;
 }
+
+
+void Lexer::SkipWhiteSpace() 
+{
+while (std::isspace(Peek())) 
+
+{
+Advance();
+ 
+}
+}
